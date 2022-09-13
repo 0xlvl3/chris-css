@@ -1,0 +1,104 @@
+<style>
+  body {
+    margin: 0;
+  }
+
+  .bg-gray-900 {
+    background-color: #121826;
+  }
+
+  .text-white {
+    color: #fff;
+  }
+
+  /* a div displays is always default block 
+  block will span across the entire width of our div*/
+  .block {
+    display: block;
+  }
+
+  /* inline-block will take up the space that the element with inline consists of - will let us use other properties like margin */
+  .inline-block {
+    display: inline-block;
+  }
+
+  /* inline will take up the space that the element with inline consists of - inline will not let you use margin top or bottom */
+  .inline {
+    display: inline;
+  }
+
+  /* will specified element */
+  .hidden {
+    display: none;
+  }
+
+  /* Should always go on parent elements */
+  /*  */
+  .flex {
+    display: flex;
+  }
+
+  /* justify-content is a flex property */
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .justify-start {
+    justify-content: start;
+  }
+
+  .justify-end {
+    justify-content: flex-end;
+  }
+
+  /* align-items is a flex property */
+  .items-center {
+    align-items: center;
+  }
+
+  /* whatever element is placed furthest down in our style tags will get precedence over other tags - important to remember when styling padding and margin*/
+  .m-8 {
+    margin: 8px;
+  }
+
+  .p-8 {
+    padding: 8px;
+  }
+
+  .py-18 {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .py-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .px-16 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+</style>
+
+<header class="bg-gray-900 flex justify-between" style="padding: 18px 12px">
+  <div class="flex justify-center items-center">
+    <img src="/img/logo.svg" alt="" style="margin-right: 50px" />
+
+    <!-- padding over margin will make link elements still clickable without been completely on them -->
+    <a class="text-white py-8 px-16" href="#">Pricing</a>
+    <a class="text-white py-8 px-16" href="#">Courses</a>
+    <a class="text-white py-8 px-16" href="#">Blog</a>
+    <a class="text-white py-8 px-16" href="#">Forum</a>
+  </div>
+  <div class="flex items-center">
+    <a class="text-white py-8 px-16" href="" style="margin-right: 12px"
+      >Login</a
+    >
+    <button>Sign Up</button>
+  </div>
+</header>
